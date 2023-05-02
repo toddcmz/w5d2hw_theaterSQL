@@ -1,0 +1,22 @@
+Descriptions of relationships for Todd Camnitz theater ERD:
+
+movies -> tickets:
+One to many. One movie can have many tickets, 
+one ticket can only go to one movie.
+
+customers -> tickets:
+One to many. One customer could buy many tickets 
+to many movies, but each ticket can only belong
+to one customer.
+
+customers -> foodsales:
+One to many. One customer can have multiple
+food sale transactions, but each transaction
+belongs to one customer.
+
+foodsales, concessions -> concessions_foodsales:
+The relationship between foodsales and the list
+of possible concession items is many to many. Each
+concession item can appear in multiple transactions,
+and each transaction can have multiple concession items.
+Many to many relationships require a joint table.
